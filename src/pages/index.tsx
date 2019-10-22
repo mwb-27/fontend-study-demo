@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './index.css';
+// const TestA = React.lazy(() => import('../components/react/lazy/testA'));
+import TestA from '../components/react/lazy/testA';
 
 export default function() {
   return (
@@ -12,6 +14,7 @@ export default function() {
             Getting Started
           </a>
         </li>
+        {false ? (<React.Suspense fallback={<div>Loading...</div>}> <TestA /> </React.Suspense>) : null}
       </ul>
     </div>
   );
