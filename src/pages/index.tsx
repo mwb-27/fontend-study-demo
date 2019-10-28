@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './index.css';
-// const TestA = React.lazy(() => import('../components/react/lazy/testA'));
-import TestA from '../components/react/lazy/testA';
+const TestA = React.lazy(() => import('../components/react/lazy/testA'));
 
 export default function() {
   return (
